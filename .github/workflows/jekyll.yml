@@ -24,7 +24,7 @@ jobs:
     - run: npm ci
 
     - name: Setting up Ruby
-      uses: actions/setup-ruby@v1.187.0
+      uses: ruby/setup-ruby@v1.187.0
       with: { ruby-version: '3.1.2' }
 
     - name: Caching Gems
