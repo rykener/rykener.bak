@@ -12,6 +12,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
+      - uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
+      - run: bundle install
+      - run: bundle exec rake
+
       - name: Build Jekyll site 🔨
         run: |
           docker run \
